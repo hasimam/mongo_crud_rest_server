@@ -1,0 +1,34 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/62543618d1ad9c246fa8486a
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Old 2",
+    "subscribedToChannel": "My Channel"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/62543e85309c8bd514b93a6f
+
+###
+
+PATCH http://localhost:3000/subscribers/62543b2bc86145e841e6baca
+Content-Type: application/json
+
+{
+    "name": "New Hasan"
+}
+
+###
+PATCH http://localhost:3000/subscribers/62543b2bc86145e841e6baca
+Content-Type: application/json
+
+{"name": "Hasan","subscribedToChannel": "My Channel"}
